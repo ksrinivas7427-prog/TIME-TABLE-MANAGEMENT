@@ -1,0 +1,38 @@
+// Array to store days of the week
+static String[] days = {
+    "Monday", "Tuesday", "Wednesday",
+    "Thursday", "Friday", "Saturday"
+};
+
+
+
+// Array to store time slots
+static String[] defaultTimeSlots = {
+    "08:10 - 09:00",
+    "09:00 - 09:50",
+    "10:00 - 10:50",
+    "10:50 - 11:40",
+    "11:40 - 12:20",
+    "12:20 - 13:10",
+    "13:10 - 14:00",
+    "14:10 - 15:00",
+    "15:00 - 15:50"
+};
+
+
+
+// 2D array to store full timetable
+static Lecture[][] timetable = new Lecture[6][9];
+
+
+
+class Lecture {
+    String subject;
+    String roomNo;
+    String teacherName;
+}
+
+
+public String toString() {
+    return subject + " (Room: " + roomNo + ") by " + teacherName;
+}
